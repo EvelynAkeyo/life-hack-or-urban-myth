@@ -188,7 +188,7 @@ app/
 
 **Evelyn Akeyo**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: https://github.com/EvelynAkeyo
 
 ---
 
