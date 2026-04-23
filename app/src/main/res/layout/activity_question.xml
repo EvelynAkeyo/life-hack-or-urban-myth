@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:padding="24dp"
+    tools:context=".QuestionActivity">
+
+    <!-- Top bar: Question counter + Score -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <!-- Question counter -->
+        <TextView
+            android:id="@+id/questionCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            tools:text="Question 1 of 10" />
+
+        <!-- Score -->
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Score: 0" />
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/quizProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/progress_bar_custom"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Progress label -->
+    <TextView
+        android:id="@+id/progressLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_progress"
+        android:textColor="@color/text_hint"
+        android:textSize="12sp"
+        android:gravity="end"
+        app:layout_constraintTop_toBottomOf="@id/quizProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Flashcard Statement Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flashcardCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/FlashcardCardStyle"
+        app:layout_constraintTop_toBottomOf="@id/progressLabel"
+        app:layout_constraintBottom_toTopOf="@id/feedbackText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Category indicator -->
+            <TextView
+                android:id="@+id/categoryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🤔"
+                android:textSize="36sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Statement text -->
+            <TextView
+                android:id="@+id/statementText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.3"
+                tools:text="\"Drinking 8 glasses of water a day is essential for everyone.\"" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Feedback text (shown after answering) -->
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:minHeight="48dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        tools:text="Correct! That's just an urban myth!"
+        tools:textColor="@color/correct_green" />
+
+    <!-- Answer buttons container -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp">
+
+        <!-- Hack (True) button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_hack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/button_hack"
+            app:cornerRadius="14dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Myth (False) button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mythButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_myth"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/button_myth"
+            app:cornerRadius="14dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp" />
+
+    </LinearLayout>
+
+    <!-- Next button (hidden until user answers) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_dark"
+        app:backgroundTint="@color/button_next"
+        app:cornerRadius="14dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
