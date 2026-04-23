@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">Life Hack or Urban Myth?</string>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- WELCOME SCREEN STRINGS -->
+    <!-- ═══════════════════════════════════════ -->
+    <string name="welcome_title">Welcome to\nLife Hack or Urban Myth?</string>
+    <string name="welcome_description">Test your knowledge! Can you tell the difference between a genuine life hack and a common urban myth? Swipe through flashcards, make your choice, and see how well you really know the facts.</string>
+    <string name="welcome_start_button">Start Quiz 🚀</string>
+    <string name="welcome_subtitle">A Flashcard Quiz Game</string>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- QUESTION SCREEN STRINGS -->
+    <!-- ═══════════════════════════════════════ -->
+    <string name="question_counter">Question %1$d of %2$d</string>
+    <string name="button_hack">Hack ✅ (True)</string>
+    <string name="button_myth">Myth ❌ (False)</string>
+    <string name="button_next">Next →</string>
+    <string name="button_finish">Finish →</string>
+    <string name="score_label">Score: %1$d</string>
+    <string name="feedback_correct_hack">Correct! ✅ That\'s a real life hack!</string>
+    <string name="feedback_correct_myth">Correct! ❌ That\'s just an urban myth!</string>
+    <string name="feedback_wrong_hack">Wrong! ✅ That\'s actually a real life hack!</string>
+    <string name="feedback_wrong_myth">Wrong! ❌ That\'s actually just an urban myth!</string>
+    <string name="quiz_progress">Quiz Progress</string>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SCORE SCREEN STRINGS -->
+    <!-- ═══════════════════════════════════════ -->
+    <string name="score_title">Quiz Complete!</string>
+    <string name="score_result">You got %1$d out of %2$d!</string>
+    <string name="feedback_high">Master Hacker! 🏆</string>
+    <string name="feedback_medium">Great job! Keep it up! 👍</string>
+    <string name="feedback_low">Stay Safe Online! 📚 Keep practising!</string>
+    <string name="button_review">Review Answers 📋</string>
+    <string name="button_play_again">Play Again 🔄</string>
+    <string name="score_percentage">%1$d%%</string>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- REVIEW SCREEN STRINGS -->
+    <!-- ═══════════════════════════════════════ -->
+    <string name="review_title">Review Answers</string>
+    <string name="review_hack_label">✅ Life Hack (True)</string>
+    <string name="review_myth_label">❌ Urban Myth (False)</string>
+    <string name="review_your_answer">Your answer: %1$s</string>
+    <string name="review_correct_answer">Correct answer: %1$s</string>
+    <string name="review_explanation">💡 %1$s</string>
+    <string name="review_correct_badge">✅ Correct</string>
+    <string name="review_incorrect_badge">❌ Incorrect</string>
+    <string name="review_question_number">Q%1$d</string>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- CONTENT DESCRIPTIONS -->
+    <!-- ═══════════════════════════════════════ -->
+    <string name="cd_app_logo">App Logo</string>
+    <string name="cd_score_icon">Score Icon</string>
+    <string name="cd_back_button">Go Back</string>
+</resources>

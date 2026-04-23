@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette: Deep Blue -->
+    <color name="primary">#FF1A237E</color>
+    <color name="primary_dark">#FF0D1642</color>
+    <color name="primary_light">#FF3949AB</color>
+
+    <!-- Accent palette: Amber -->
+    <color name="accent">#FFFFC107</color>
+    <color name="accent_dark">#FFFFA000</color>
+    <color name="accent_light">#FFFFECB3</color>
+
+    <!-- Correct / Incorrect feedback -->
+    <color name="correct_green">#FF4CAF50</color>
+    <color name="correct_green_light">#FFC8E6C9</color>
+    <color name="incorrect_red">#FFF44336</color>
+    <color name="incorrect_red_light">#FFFFCDD2</color>
+
+    <!-- Neutral / Background -->
+    <color name="background_dark">#FF0A1128</color>
+    <color name="background_card">#FF1C2951</color>
+    <color name="surface">#FF1E2A5E</color>
+    <color name="on_surface">#FFFFFFFF</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB0BEC5</color>
+    <color name="text_hint">#FF78909C</color>
+
+    <!-- Progress bar -->
+    <color name="progress_track">#FF37474F</color>
+    <color name="progress_indicator">#FFFFC107</color>
+
+    <!-- Button colors -->
+    <color name="button_hack">#FF1565C0</color>
+    <color name="button_myth">#FF6A1B9A</color>
+    <color name="button_disabled">#FF455A64</color>
+    <color name="button_next">#FFFFC107</color>
+
+    <!-- Review card -->
+    <color name="review_card_bg">#FF1C2951</color>
+    <color name="divider">#FF37474F</color>
+
+    <!-- Status bar -->
+    <color name="status_bar">#FF0D1642</color>
+
+    <!-- White and Black -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>
