@@ -110,7 +110,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:lineSpacingMultiplier="1.3"
-                tools:text="\"Drinking 8 glasses of water a day is essential for everyone.\"" />
+                tools:text="&quot;Drinking 8 glasses of water a day is essential for everyone.&quot;" />
 
         </LinearLayout>
 
