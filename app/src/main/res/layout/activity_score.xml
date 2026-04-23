@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scoreRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:padding="32dp"
+    tools:context=".ScoreActivity">
+
+    <!-- Trophy / Result emoji -->
+    <TextView
+        android:id="@+id/resultEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        tools:text="🏆" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/score_title"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/resultEmoji"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Score Circle Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scoreCard"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/background_card"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="12dp"
+        app:layout_constraintTop_toBottomOf="@id/scoreTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Score percentage -->
+            <TextView
+                android:id="@+id/scorePercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                tools:text="70%" />
+
+            <!-- Score fraction -->
+            <TextView
+                android:id="@+id/scoreResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                tools:text="7 out of 10" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Personalized feedback message -->
+    <TextView
+        android:id="@+id/feedbackMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/scoreCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        tools:text="Master Hacker! 🏆" />
+
+    <!-- Button container at bottom -->
+    <LinearLayout
+        android:id="@+id/scoreButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <!-- Review Answers Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_review"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"
+            app:backgroundTint="@color/accent"
+            app:cornerRadius="14dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Play Again Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playAgainButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_play_again"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            app:strokeColor="@color/accent"
+            app:strokeWidth="2dp"
+            app:cornerRadius="14dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
