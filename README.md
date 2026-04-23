@@ -31,11 +31,9 @@ In the age of misinformation, many people believe common myths and misconception
 
 ## 📸 Screenshots
 
-> **Note:** Add your screenshots to a `screenshots/` folder and update the paths below.
-
 | Welcome Screen | Question Screen | Score Screen | Review Screen |
 |:-:|:-:|:-:|:-:|
-| ![Welcome](screenshots/welcome.png) | ![Question](screenshots/question.png) | ![Score](screenshots/score.png) | ![Review](screenshots/review.png) |
+| ![Welcome](screenshots/Screenshot_20260423_181925.png) | ![Question](screenshots/Screenshot_20260423_182001.png) | ![Score](screenshots/Screenshot_20260423_182935.png) | ![Review](screenshots/Screenshot_20260423_183004.png) |
 
 ---
 
