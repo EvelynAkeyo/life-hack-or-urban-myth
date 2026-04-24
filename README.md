@@ -49,7 +49,7 @@ In the age of misinformation, many people believe common myths and misconception
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/life-hack-or-urban-myth.git
+   git clone https://github.com/EvelynAkeyo/life-hack-or-urban-myth.git.
    cd life-hack-or-urban-myth
    ```
 
