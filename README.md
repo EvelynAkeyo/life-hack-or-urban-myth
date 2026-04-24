@@ -7,7 +7,7 @@
 
 ## Description
 
-**Life Hack or Urban Myth?** is an engaging Android flashcard quiz game that challenges users to determine whether common life advice statements are genuine life hacks or just urban myths. The app helps users develop critical thinking skills and bust everyday misconceptions in a fun, interactive way.
+**Hack or Myth?** is an engaging Android flashcard quiz game that challenges users to determine whether common life advice statements are genuine life hacks or just urban myths. The app helps users develop critical thinking skills and bust everyday misconceptions in a fun, interactive way.
 
 ### The Problem It Solves
 In the age of misinformation, many people believe common myths and misconceptions without questioning them. This app educates users in an entertaining format — turning myth-busting into a game that rewards knowledge and curiosity.
