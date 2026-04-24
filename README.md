@@ -1,35 +1,28 @@
-# 🧠 Life Hack or Urban Myth?
+Hack or Myth?
 
-![Android CI](https://github.com/YOUR_USERNAME/life-hack-or-urban-myth/actions/workflows/build.yml/badge.svg)
-![Kotlin](https://img.shields.io/badge/Kotlin-1.9-purple.svg)
-![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+**Hack or Myth?** is an engaging Android flashcard quiz game that challenges users to determine whether common life advice statements are genuine life hacks or just urban myths. The app helps users develop critical thinking skills and bust everyday misconceptions in a fun, interactive way.
 
-## 📖 Description
-
-**Life Hack or Urban Myth?** is an engaging Android flashcard quiz game that challenges users to determine whether common life advice statements are genuine life hacks or just urban myths. The app helps users develop critical thinking skills and bust everyday misconceptions in a fun, interactive way.
-
-### The Problem It Solves
+### The problem it solves
 In the age of misinformation, many people believe common myths and misconceptions without questioning them. This app educates users in an entertaining format — turning myth-busting into a game that rewards knowledge and curiosity.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🃏 **Flashcard-based quiz** — Swipe through 12 unique life hack vs. myth questions
-- 🔀 **Randomized questions** — Questions are shuffled each playthrough for replayability
-- ✅❌ **Instant feedback** — Animated feedback after each answer with color-coded buttons
-- 📊 **Progress tracking** — Real-time progress bar and score counter
-- 🏆 **Personalized results** — Three-tier feedback system based on your final score
-- 📋 **Answer review** — Comprehensive review screen with explanations for every question
-- 🔄 **Replay support** — Play again with freshly shuffled questions
-- 📱 **Screen rotation safe** — State is preserved during configuration changes
-- 🎨 **Modern dark theme** — Deep blue + amber accent Material Design 3 UI
-- 🔧 **CI/CD pipeline** — Automated builds and tests with GitHub Actions
+- **Flashcard-based quiz** — Swipe through 12 unique life hack vs. myth questions
+- **Randomized questions** — Questions are shuffled each playthrough for replayability
+- **Instant feedback** — Animated feedback after each answer with color-coded buttons
+- **Progress tracking** — Real-time progress bar and score counter
+- **Personalized results** — Three-tier feedback system based on your final score
+- **Answer review** — Comprehensive review screen with explanations for every question
+- **Replay support** — Play again with freshly shuffled questions
+- **Screen rotation safe** — State is preserved during configuration changes
+  **Modern dark theme** — Deep blue + amber accent Material Design 3 UI
+  **CI/CD pipeline** — Automated builds and tests with GitHub Actions
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 | Welcome Screen | Question Screen | Score Screen | Review Screen |
 |:-:|:-:|:-:|:-:|
@@ -37,7 +30,7 @@ In the age of misinformation, many people believe common myths and misconception
 
 ---
 
-## 🚀 How to Run Locally
+## How to run locally
 
 ### Prerequisites
 - [Android Studio](https://developer.android.com/studio) (Hedgehog or later recommended)
@@ -71,7 +64,7 @@ In the age of misinformation, many people believe common myths and misconception
 
 ---
 
-## 🎨 Design Considerations
+## Design Considerations
 
 ### UI Choices
 - **Dark theme with deep blue background** — Reduces eye strain and gives a premium, modern feel
@@ -148,7 +141,7 @@ The test suite (`FlashcardUnitTest.kt`) includes:
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 app/
@@ -178,20 +171,22 @@ app/
 
 ---
 
-## 🎥 Video Presentation
+## Video Presentation
 
-> [Add YouTube link here]
+(https://www.youtube.com/shorts/ZM1v5wYhtpM)
 
 ---
 
-## 👤 Author
+## Author
 
 **Evelyn Akeyo**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: (https://github.com/EvelynAkeyo)
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+## 📘 Note
+
+This project was developed for educational purposes as part of a school assignment.
