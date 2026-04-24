@@ -180,7 +180,7 @@ app/
 
 ## 🎥 Video Presentation
 
-> [Add YouTube link here]
+https://www.youtube.com/shorts/ZM1v5wYhtpM
 
 ---
 
